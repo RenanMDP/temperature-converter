@@ -7,7 +7,6 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 1fr;
   grid-template-areas: 
-    /* "header header header header header header header header header header header header" */
     "main main main main main main main main main main main main"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
   background: #114357;  /* fallback for old browsers */
@@ -26,7 +25,6 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -37,9 +35,6 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
-  /* border-top: 1px solid red; */
-  /* background-color: crimson; */
-  /* margin-top: auto; */
 }
 
 #convertFrom {
@@ -103,11 +98,7 @@ footer p em {
   font-style: italic;
 }
 
-#main-content {
-  /* background-color: black; */
-}
-
-
+/* Icons */
 #icons {
   display: block;
   font-size: 5vh;
@@ -125,7 +116,7 @@ footer p em {
   color: hsl(184, 76%, 50%);
 }
 
-/* Idiom CSS */
+/* Idiom Box */
 #idiom-div {
   border: 2px solid black;
   height: fit-content;
