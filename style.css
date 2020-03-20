@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  /* grid-row-gap: 10px; */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    /* "header header header header header header header header header header header header" */
+    "main main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  background: #114357;  /* fallback for old browsers */
+  background: -webkit-radial-gradient(circle, #3d96b9, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(circle, #3d96b9, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto Mono', monospace;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  text-align: center;
+  /* background-color: pink; */
+  /* height: 110%; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  /* border-top: 1px solid red; */
+  /* background-color: crimson; */
+  /* margin-top: auto; */
+}
+
+#convertFrom {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  direction: rtl;
+}
+
+#fromTemp, #toTemp {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+}
+
+#convertBtn {
+  display: block;
+  margin: 5vh auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 2px 1px black;
+  
+}
+
+#convertBtn:active {
+  box-shadow: -2px -2px 2px black;
+}
+
+#tempResult {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 0 auto 0 auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 2rem;
+}
+
+footer p {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 2vh;
+}
+
+footer p em {
+  color: hsl(184, 76%, 50%);
+  font-style: italic;
+}
+
+#main-content {
+  /* background-color: black; */
+}
+
+
+#icons {
+  display: block;
+  font-size: 5vh;
+}
+
+#icons a:link {
+  color: black;
+}
+
+#icons a:visited {
+  color: black;
+}
+
+#icons a:hover {
+  color: hsl(184, 76%, 50%);
+}
+
+/* Idiom CSS */
+#idiom-div {
+  border: 2px solid black;
+  height: fit-content;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+#idiom-div img {
+  display: block;
+  width: 5vh;
+  height: auto;
+  padding: 5px;
+}
+
+#pt-flag {
+  border-top: 2px solid black;
+}
+
+#idiom-div img:hover {
+  background-color: rgba(81, 156, 156);
+}

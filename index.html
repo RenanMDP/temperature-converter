@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Temperature Converter</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Renan Martineli de Paula" />
+    <meta name="description" content="Temperature Converter" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/b8f8e0d1db.js"></script>
+    <script src="./kw-app.js" defer></script>
+  </head>
+  <body>
+    <div id="idiom-div">
+      <a href="index.html">
+        <img src="images/united_kingdom_640.png" alt="english language" />
+      </a>
+      <a href="index-br.html">
+        <img id="pt-flag" src="images/portugal_640.png" alt="idioma português" />
+      </a>
+    </div>
+    <main>
+      <div id="main-content">
+        <p>Convert from</p>
+        <label for="convertFrom">
+          <input type="number" id="convertFrom" value=""/>
+        </label>
+        <select id="fromTemp">
+          <label for="fromCelsius">
+            <option value="celsius" id="fromCelsius">C elsius</option>
+          </label>
+          <label for="fromFahrenheit">
+            <option value="fahrenheit" id="fromFahrenheit">F ahrenheit</option>
+          </label>
+          <label for="fromKelvin">
+            <option value="kelvin" id="fromKelvin">K elvin</option>
+          </label>
+          <label for="fromNewton">
+            <option value="newton" id="fromNewton">N newton</option>
+          </label>
+        </select>
+        <p>to</p>
+        <select id="toTemp">
+          <label for="toCelsius">
+            <option value="celsius" id="toCelsius">C elsius</option>
+          </label>
+          <label for="toFahrenheit">
+            <option value="fahrenheit" id="toFahrenheit">F ahrenheit</option>
+          </label>
+          <label for="toKelvin">
+            <option value="kelvin" id="toKelvin">K elvin</option>
+          </label>
+          <label for="toNewton">
+            <option value="newton" id="toNewton">N ewton</option>
+          </label>
+        </select>
+        <label for="convertBtn">
+          <input type="button" id="convertBtn" value="Convert" />
+        </label>
+        <div id="tempResult">
+          <!-- <div id="tempNumber"></div> -->
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>Made by <em>Renan Martineli de Paula</em></p>
+        <div id="icons">
+          <a href="https://github.com/RenanMDP/" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/renan-martineli-de-paula-aa491562/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+  </body>
+</html>
