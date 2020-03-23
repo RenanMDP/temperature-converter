@@ -38,12 +38,12 @@ footer {
 }
 
 #convertFrom {
-  padding: 5px;
+  padding: 5.75px;
   outline: none;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 1px black;
-  direction: rtl;
+  text-align: right;
 }
 
 #fromTemp, #toTemp {
@@ -54,25 +54,16 @@ footer {
   box-shadow: 1px 1px 1px black;
 }
 
-#convertBtn {
-  display: block;
-  margin: 5vh auto;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 2px 2px 1px black;
-  
-}
-
-#convertBtn:active {
-  box-shadow: -2px -2px 2px black;
+#toTemp {
+  margin-bottom: 5vh;
 }
 
 #tempResult {
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  max-width: fit-content;
+  word-break: break-all;
+  min-height: 200px;
+  max-height: fit-content;
   border: 2px solid black;
   margin: 0 auto 0 auto;
   font-size: 2rem;

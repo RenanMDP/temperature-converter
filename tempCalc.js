@@ -1,5 +1,4 @@
-// Reads the input from user
-const convertNumberFrom = document.querySelector("#convertFrom");
+import { convertNumberFrom } from './tempApp.js';
 
 // Get the div to write the result number
 const tempResult = document.querySelector("#tempResult");

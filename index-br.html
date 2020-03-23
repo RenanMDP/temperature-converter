@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/b8f8e0d1db.js"></script>
-    <script src="./kw-app.js" type="module" defer></script>
+    <script src="./tempApp.js" type="module" defer></script>
   </head>
   <body>
     <div id="idiom-div">
@@ -25,7 +25,7 @@
       <div id="main-content">
         <p>Converta de</p>
         <label for="convertFrom">
-          <input type="number" id="convertFrom" value=""/>
+          <input type="number" id="convertFrom" placeholder="Digite a temperatura..." required />
         </label>
         <select id="fromTemp">
           <label for="fromCelsius">
@@ -47,7 +47,7 @@
             <option value="celsius" id="toCelsius">C elsius</option>
           </label>
           <label for="toFahrenheit">
-            <option value="fahrenheit" id="toFahrenheit">F ahrenheit</option>
+            <option value="fahrenheit" id="toFahrenheit" selected>F ahrenheit</option>
           </label>
           <label for="toKelvin">
             <option value="kelvin" id="toKelvin">K elvin</option>
@@ -56,11 +56,7 @@
             <option value="newton" id="toNewton">N ewton</option>
           </label>
         </select>
-        <label for="convertBtn">
-          <input type="button" id="convertBtn" value="Convert" />
-        </label>
         <div id="tempResult">
-          <!-- <div id="tempNumber"></div> -->
         </div>
       </div>
     </main>
@@ -68,7 +64,7 @@
         <p>Feito por <em>Renan Martineli de Paula</em></p>
         <div id="icons">
           <a href="https://github.com/RenanMDP/" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://www.linkedin.com/in/renan-martineli-de-paula-aa491562/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://renanmdp.github.io/resume/br.html" target="_blank"><i class="fas fa-code"></i></a>
         </div>
     </footer>
   </body>
