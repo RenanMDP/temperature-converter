@@ -10,7 +10,7 @@
 
 ✔ Feito com JavaScript puro, CSS3 e HTML5
 
-✔ Converta instantâneamnete temperaturas entre Celsius, Fahrenheit, Kelvin e Newton
+✔ Converta instantaneamente temperaturas entre Celsius, Fahrenheit, Kelvin e Newton
 
 ### [Confira](https://renanmdp.github.io/temperature-converter/index-br)
 
