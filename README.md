@@ -2,7 +2,7 @@
 
 ✔ Built with pure JavaScript, CSS3 and HTML5.
 
-✔ Convert in real time temperatures between Celsius, Fahrenheit, Kelvin and Newton.
+✔ Convert in real-time temperatures between Celsius, Fahrenheit, Kelvin and, Newton.
 
 ### [Check it out](https://renanmdp.github.io/temperature-converter/)
 
